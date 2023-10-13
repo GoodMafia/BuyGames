@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+ max-width: 1180px;
+ margin: auto;
+}
+
+header {
+ /* position: fixed; */
+ background-color: #e00000;
+ width: 100%;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+
+.rubber {
+ height: 32px;
+ padding-top: 10px;
+
+}
+
+.logo {
+ text-decoration: none;
+}
+
+.logo-text {
+ color: #000000;
+ font-family: Inter;
+ font-weight: 600;
+ font-size: 24px;
+
+}
+
+.flex {
+ display: flex;
+ align-items: center;
+}
+
+.nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+/* .links {
+} */
+
+.link {
+ color: #000000;
+ font-family: Inter;
+ font-weight: 600;
+ font-size: 24px;
+ text-decoration: none;
+ padding-left: 135px;
+}
+
+
+.menuBtn,
+.searchBtn {
+ background-color: #E00000;
+ border: none;
+ cursor: pointer;
+}
+
+.svg {
+ display: flex;
+ justify-content: space-between;
+}
+
+.mainsec {
+ background-image: url(../img/playstation.png);
+ background-color: white;
+ background-position: -493px 10px;
+ background-repeat: no-repeat;
+ padding-top: 175px;
+ padding-bottom: 354px;
+
+}
+
+.best {
+ font-family: Inter;
+ font-weight: 600;
+ font-size: 40px;
+ text-align: right;
+}
+
+footer {
+ background-color: #E00000;
+}
+
+.flexbox {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.title-footer {
+ padding-bottom: 10px;
+ font-family: Inter;
+ font-size: 24px;
+ font-weight: 600;
+}
+
+.string {
+ padding-bottom: 10px;
+ font-family: Inter;
+ font-size: 24px;
+ font-weight: 400;
+}
+
+.block {
+ padding-top: 19px;
+ padding-bottom: 19px;
+}
+
+.menu {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 500px;
+ border-radius: 20px;
+ padding-top: 100px;
+ padding-bottom: 100px;
+}
+
+.login,
+.register,
+.email,
+.anyprobs,
+.anyprobs1,
+.anyprobs2 {
+ padding-top: 30px;
+}
+
+.button {
+ padding-top: 20px;
+}
+
+
+.stylish {
+ color: #FFF;
+ width: 380px;
+ height: 55px;
+ font-family: Inter;
+ font-size: 20px;
+ font-weight: 400;
+ border: 1px solid #FF0000;
+ cursor: pointer;
+ transition: 0.7s;
+}
+
+.stylish {
+ border-radius: 5px;
+}
+
+.submit,
+.registerButton,
+.resetBtn {
+ padding: 7.5px 10.5px;
+ background-color: transparent;
+ border: 2px solid #FF0000;
+ color: white;
+ cursor: pointer;
+ font-family: Inter;
+ font-size: 16px;
+ font-weight: 400;
+ transition: 0.5s
+}
+
+.submit:hover,
+.registerButton:hover,
+.resetBtn:hover {
+ background-color: #FF0000;
+ color: black;
+}
+
+.stylish2 {
+ padding-left: 10px;
+ color: white;
+}
+
+.stylish:hover {
+ background-color: #343436;
+}
+
+.menu,
+.stylish {
+ background-color: #000000;
+}
+
+.anyprobs,
+.anyprobs1,
+.anyprobs2 {
+ color: #FF0000;
+ font-family: Inter;
+ font-size: 12px;
+ font-weight: 400;
+ background-color: transparent;
+ border: none;
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.for-flex,
+.for-flex1,
+.for-flex2,
+.for-flex3,
+.for-flex4 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ visibility: hidden;
+ opacity: 0;
+ display: none;
+ position: fixed;
+ top: 0px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 10;
+}
+
+.for-flex,
+.for-flex4 {
+ background-color: #000000b7;
+}
+
+.for-flex.opened,
+.for-flex1.opened,
+.for-flex2.opened,
+.for-flex3.opened,
+.for-flex4.opened {
+ opacity: 1;
+ visibility: visible;
+ display: flex;
+}
+
+.mostpopular {
+ background-color: #000000;
+ padding-bottom: 20px;
+}
+
+.text-title {
+ padding-top: 83px;
+ display: flex;
+ align-items: center;
+}
+
+.innerText {
+ padding-left: 16.5px;
+ font-family: 'Inter';
+ font-weight: 600;
+ font-size: 32px;
+ line-height: 39px;
+ color: #FFFFFF;
+}
+
+.searchInp {
+ width: 0px;
+ margin-right: 10px;
+ margin-left: 10px;
+ padding-left: 0px;
+ transition: 0.8s;
+ border-bottom: 2px solid #000000;
+ border-left: none;
+ border-top: none;
+ border-right: none;
+ background-color: transparent;
+ font-family: 'Inter';
+ font-weight: 600;
+ font-size: 24px;
+}
+
+.searchInp:focus {
+ outline: none;
+}
+
+.account-block {
+ margin-left: 50px;
+}
+
+.closeBtn {
+ border: none;
+ background-color: transparent;
+ cursor: pointer;
+
+ display: none;
+ opacity: 0;
+ visibility: hidden;
+}
+
+.closeBtn.opened {
+ display: inline-block;
+ visibility: visible;
+ opacity: 1;
+}
+
+.parfl {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 20px;
+ padding-top: 60px;
+}
+
+.fl {
+ width: 280px;
+ position: relative;
+}
+
+.price {
+ position: absolute;
+ right: -16px;
+ bottom: -13px;
+ background-color: #FF0000;
+ padding: 8px 12px;
+ border-radius: 30px;
+ font-family: 'Inter';
+ font-weight: 600;
+ font-size: 20px;
+}
+
+.mostpopular .price {
+ right: -13px;
+ bottom: -13px;
+}
+
+.photo {
+ color: black;
+ text-decoration: none;
+}
+
+.ps4 {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 40px;
+ color: #FFFFFF
+}
+
+.hand {
+ width: 580px;
+ height: 344px;
+}
+
+.joystick {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ padding-top: 120px;
+ font-size: 32px;
+}
+
+.lasting {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 16px;
+ padding-top: 22px;
+}
+
+.lasting,
+.joystick {
+ padding-left: 40px;
+ color: #FFFFFF;
+
+}
+
+.flexing {
+ display: flex;
+}
+
+.discounts {
+ padding-top: 120px;
+}
+
+.firstplc {
+ font-family: Inter;
+ font-size: 20px;
+ font-weight: 400;
+ padding-top: 14px;
+ padding-left: 20px;
+}
+
+.choice {
+ margin-top: 60px;
+ width: 280px;
+ border: 2px solid #E00000
+}
+
+.checkboxes {
+ appearance: none;
+ width: 16px;
+ height: 16px;
+ position: absolute;
+ z-index: 10;
+}
+
+.checkboxes:checked+.vis-check {
+ background-color: #E00000;
+}
+
+.shooter,
+.rating {
+ font-family: Inter;
+ font-size: 24px;
+ font-weight: 600;
+ padding-top: 20px;
+}
+
+.prices,
+output {
+ margin-left: 20px;
+}
+
+.description {
+ padding-top: 16px;
+}
+
+.shooter,
+.rating,
+.description {
+ padding-left: 20px;
+}
+
+.parent {
+ position: relative;
+ width: 16px;
+ height: 16px;
+}
+
+.vis-check {
+ width: 16px;
+ height: 16px;
+ display: block;
+ position: absolute;
+ border: 2px #E00000 solid;
+ margin-top: 3px;
+}
+
+.slider {
+ position: relative;
+ width: calc(100% - 17px);
+ margin-left: 20px;
+ margin-top: 34px;
+}
+
+
+.biggest {
+ background-color: #000000;
+ padding-top: 112px;
+ padding-bottom: 60px;
+}
+
+.shooter,
+.rating,
+.firstplc,
+#volume,
+.forXbox {
+ color: #FFFFFF;
+}
+
+.forXbox {
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 32px;
+}
+
+.rating {
+ padding-top: 44px;
+}
+
+.pay {
+ background-color: #E00000;
+ outline: none;
+ border: none;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 24px;
+ padding: 15px 77px;
+ color: #FFFFFF;
+ cursor: pointer;
+}
+
+.buttonWrapper {
+ text-align: center;
+ padding-top: 55px;
+ padding-bottom: 50px
+}
+
+.forXbox {
+ padding-bottom: 23px;
+}
+
+.xboxgames {
+ position: relative;
+ display: flex;
+ gap: 50px;
+ align-items: flex-start;
+ flex-wrap: wrap;
+
+}
+
+.xboxgames .fl {
+ width: 150px;
+ position: relative;
+}
+
+.xboxpart {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
+.right {
+ max-width: 750px;
+}
+
+.pstext {
+ padding-top: 60px;
+}
+
+.buyMenu {
+ background-color: #000000;
+ max-width: 1020px;
+ border-radius: 20px;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+.pay4games,
+.paymentMethod {
+ color: white;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 36px;
+ ;
+ text-align: center;
+}
+
+.paymentMethod {
+ font-size: 24px;
+ padding-top: 20px;
+}
+
+.chooseMethod {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.visa,
+.mastercard {
+ color: #FFFFFF;
+ padding-top: 18px;
+ padding-bottom: 18px;
+ padding-left: 150px;
+ padding-right: 150px;
+ border: 1px #FF0000 solid;
+ background-color: transparent;
+ font-size: 36px;
+ font-family: Inter;
+ font-weight: 600;
+}
+
+.mastercard {
+ margin-left: 20px;
+}
+
+.visa:hover,
+.mastercard:hover {
+ background-color: #FF0000;
+ color: black;
+ transition: 0.5s;
+ cursor: pointer;
+}
+
+.noUi-target {
+ background: #E00000;
+ border: none;
+ box-shadow: none;
+ border-radius: 0;
+ height: 2px;
+}
+
+.noUi-connect {
+ background-color: #585858;
+}
+
+.noUi-handle:after, .noUi-handle:before{
+ display: none;
+}
+
+.noUi-handle{
+ border: none;
+ border-radius: 0;
+ box-shadow: none;
+ background-color: #E00000;
+ width: 16px;
+ height: 16px;
+}
+
+.noUi-horizontal .noUi-handle{
+ width: 16px;
+ height: 16px;
+}
+
+.noUi-horizontal .noUi-handle-upper{
+ right: 0;
+} 
+
+.deliverytext{
+ color: #FF0000;
+ font-family: Inter;
+ font-size: 16px;
+ font-weight: 400;
+ background-color: transparent;
+ border: none;
+ text-decoration: underline;
+ cursor: pointer;
+}
+.menu, .buyMenu{
+ box-shadow: 0 0 30px #E00000;
+}
+.deliveryblock{
+ text-align: center;
+ padding-top: 50px;
+}
+@media(max-width: 1200px) {
+ .container {
+     max-width: 90%;
+ }
+}
