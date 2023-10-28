@@ -214,9 +214,6 @@ footer {
  display: flex;
  justify-content: center;
  align-items: center;
- visibility: hidden;
- opacity: 0;
- display: none;
  position: fixed;
  top: 0px;
  left: 0;
