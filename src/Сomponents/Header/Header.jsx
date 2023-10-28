@@ -13,9 +13,7 @@ export default function Header() {
         setFlag(true)
     }
 
-    function close(){
-       setFlag(false)
-    }
+
   return (
     <header>
         <div className="container">
