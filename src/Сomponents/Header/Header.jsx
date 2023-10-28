@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 import img1 from '../../img/gamepad.svg'
 import img2 from '../../img/Search.svg'
 import img3 from '../../img/Account.svg'
@@ -6,8 +7,14 @@ import img4 from '../../img/rubber.png'
 import Menu from '../Menu/Menu'
 
 export default function Header() {
-    function returnMenu(){
-        return (<Menu/>)
+    const [flag, setFlag] = useState(false)
+
+    function open(){
+        setFlag(true)
+    }
+
+    function close(){
+       setFlag(false)
     }
   return (
     <header>
@@ -23,7 +30,7 @@ export default function Header() {
                 <div className="svg">
                     <button href="#" className="searchBtn"><img src={img2} alt="searchimg"></img></button>
                     <div className="search-block"><input type="text" className="searchInp"></input><button className="closeBtn"><img className="rubber" src={img4} alt="img"></img></button></div>
-                    <div className="account-block"><button onClick={returnMenu} className="menuBtn"><img src={img3} alt="accountimg"></img></button></div>
+                    <div className="account-block"><button onClick={open} className="menuBtn"><img src={img3} alt="accountimg"></img></button></div>
                 </div>
             </div>
         </div>
